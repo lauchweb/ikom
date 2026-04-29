@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mo Endemik Official Website</title>
+  <title>ME Official Website</title>
   <meta name="description" content="ME Official Website">
 
   <style>
@@ -23,28 +23,37 @@
 
     .title {
       font-size: 34px;
-      font-weight: 700; /* Bold */
-      color: #123996; /* Darker blue */
+      font-weight: 700;
+      color: #123996; /* Blue */
       margin: 0;
     }
 
     .subtitle {
       margin: 8px 0 0 0;
       font-size: 16px;
-      color: #777;
+      color: #555; /* Grey */
     }
 
     .spacer {
-      flex: 1; /* Pushes footer to bottom */
+      flex: 1; 
     }
 
     footer {
-      color: #123996; /* Darker blue */
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      font-weight: 700; /* Bold */
       background: transparent;
+      /* removed font-weight here */
+    }
+
+    .footer-pc {
+      color: #555; /* same as subtitle */
+      font-weight: 400; /* normal */
+    }
+
+    .footer-me {
+      color: #123996; /* same as title */
+      font-weight: 700; /* bold only for ME */
     }
   </style>
 </head>
@@ -52,15 +61,15 @@
 <body>
 
   <div class="header">
-    <h1 class="title">Mo Endemik</h1>
-    <p class="subtitle">Mauritian endemic flora</p>
+    <h1 class="title">ME</h1>
+    <p class="subtitle">MEF</p>
   </div>
 
   <div class="spacer"></div>
 
   <footer>
-    © Mo Endemik 2026
+    <span class="footer-pc">PC © 2026</span>
+    <span class="footer-me"> ME</span>
   </footer>
 
 </body>
-</html>
