@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mo Endemik Official Website</title>
-  <meta name="description" content="Mo Endemik Official Website">
+  <title>ME Official Website</title>
+  <meta name="description" content="ME Official Website">
 
   <style>
     body {
@@ -15,6 +15,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow-x: hidden;
     }
 
     .header {
@@ -74,25 +75,54 @@
       color: #555;
       font-family: Arial, sans-serif;
     }
+
+    /* MOBILE FIX */
+    @media (max-width: 600px) {
+      .header {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 26px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .contact {
+        right: 90px;
+        top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .info {
+        right: 20px;
+        top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
   </style>
 </head>
 
 <body>
 
   <div class="header">
-    <h1 class="title">Mo Endemik</h1>
-    <p class="subtitle">Mauritian endemic flora</p>
+    <h1 class="title">ME</h1>
+    <p class="subtitle">MEF</p>
   </div>
 
-  <div class="contact">Help</div>
+  <div class="help">Help</div>
   <div class="info">Info</div>
 
   <div class="spacer"></div>
 
   <footer>
-    <span class="footer-pc">Propagation & Conservation ©</span>
-    <span class="footer-me"> Mo Endemik</span>
-    <span class="footer-pc"> 2026</span>
+    <span class="footer-pc">PC ©</span>
+    <span class="footer-me">ME</span>
+    <span class="footer-pc">2026</span>
   </footer>
 
 </body>
