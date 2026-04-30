@@ -20,6 +20,14 @@
 
     .header {
       padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title-block {
+      display: flex;
+      flex-direction: column;
     }
 
     .title {
@@ -32,6 +40,24 @@
     .subtitle {
       margin: 8px 0 0 0;
       font-size: 16px;
+      color: #555;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      font-size: 24px;
+      font-weight: 400;
+      font-family: Arial, sans-serif;
+    }
+
+    .help {
+      color: #123996;
+    }
+
+    .info,
+    .about {
       color: #555;
     }
 
@@ -56,32 +82,10 @@
       font-weight: 700;
     }
 
-    /* NAVIGATION */
-    .nav {
-      position: absolute;
-      top: 30px;
-      right: 40px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 30px;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: Arial, sans-serif;
-    }
-
-    .help {
-      color: #123996;
-    }
-
-    .info,
-    .about {
-      color: #555;
-    }
-
     @media (max-width: 600px) {
       .header {
         padding: 20px;
+        align-items: center;
       }
 
       .title {
@@ -93,8 +97,6 @@
       }
 
       .nav {
-        top: 20px;
-        right: 20px;
         font-size: 18px;
         gap: 20px;
       }
@@ -105,14 +107,16 @@
 <body>
 
   <div class="header">
-    <h1 class="title">ME</h1>
-    <p class="subtitle">MEF</p>
-  </div>
+    <div class="title-block">
+      <h1 class="title">ME</h1>
+      <p class="subtitle">MEF</p>
+    </div>
 
-  <div class="nav">
-    <div class="help">Help</div>
-    <div class="info">Info</div>
-    <div class="about">About</div>
+    <div class="nav">
+      <div class="help">Help</div>
+      <div class="info">Info</div>
+      <div class="about">About</div>
+    </div>
   </div>
 
   <div class="spacer"></div>
@@ -120,7 +124,7 @@
   <footer>
     <span class="footer-pc">PC ©</span>
     <span class="footer-me">ME</span>
-    <span class="footer-2026">2026</span>
+    <span class="footer-pc">2026</span>
   </footer>
 
 </body>
